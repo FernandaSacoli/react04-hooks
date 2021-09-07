@@ -14,10 +14,10 @@ const Menu = props => (
     <Link to="/UseState">useState ( ) </Link>
     </li>
     <li> 
-    <Link to="/conteudo02"> useEffect ( ) </Link>
+    <Link to="/UseEffect"> useEffect ( ) </Link>
     </li>
     <li> 
-    <Link to="/conteudo03"> useContext ( ) </Link>
+    <Link to="/UseContext"> useContext ( ) </Link>
     </li>
     
             </ul>

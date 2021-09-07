@@ -1,10 +1,17 @@
 import './UseState.css'
-import React, {useState} from "react"
+import React, {useState, useContext} from "react"
 
+import { AppContexto } from '../../data/Store'
 const UseState = props => {
+
+    const {contextoNome, setContextoNome} = useContext(AppContexto)
     const [nome, setNome] = useState("")
     const [sobrenome, setSobrenome] = useState("")
     const [mensagem, setMensagem] = useState("")
+
+    function alteraNomeContexto(nome) {
+        setContextoNome(nome)
+    }
     return (
         <div>
             <div className="titulo">
@@ -29,6 +36,12 @@ const UseState = props => {
                     Ok
                 </button>
                 <p className="mensagem">{mensagem}</p>
+                <button
+                className="botao"
+                onClick={() => alteraNomeContexto(nome)}
+                >
+                    Altera contexto (Store)
+                </button>
             </div>
         </div>
    
