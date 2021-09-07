@@ -6,9 +6,8 @@ import UseState from '../../views/contents/UseState'
 import UseEffect from '../../views/contents/UseEffect'
 import UseContext from '../../views/contents/UseContext'
 import NaoEncontrado from '../../views/contents/NaoEncontrado'
-
 const Content = props => (
-    <main className="Content">
+     <main className="Content">
         <Switch>
             <Route exact path="/">
                 <Hooks />
@@ -28,5 +27,4 @@ const Content = props => (
         </Switch>
     </main>
 )
-
 export default Content

@@ -3,20 +3,16 @@
     flex-basis: 250px;
     background-color: #14273e;
 }
-
 .Menu nav {
     flex: 1;
 }
-
 .Menu ul {
     list-style: none;
     padding: 0;
 }
-
 .Menu li {
     display: flex;
 }
-
 .Menu li a{
     flex: 1;
     padding: 10px;
@@ -25,7 +21,6 @@
     color: #a8dadc;
     font-size: 1.5rem;
 }
-
 .Menu li a:hover {
     background-color: #386480;
 }

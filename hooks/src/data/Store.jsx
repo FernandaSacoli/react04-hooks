@@ -1,14 +1,9 @@
 import React, {useState} from 'react'
-
 const contextoInicial = {
     contextoNome: 'User',
     contextoSenha: 123456
 }
-
 export const AppContexto = React.createContext(contextoInicial)
-
-
-
     const Store = props => {
         const [contexto, setContexto] = useState(contextoInicial)
     function atualizaContexto(key, value){
@@ -29,6 +24,5 @@ export const AppContexto = React.createContext(contextoInicial)
         </AppContexto.Provider>
     )
     }
-
 
 export default Store
